@@ -25,7 +25,7 @@ function populateForm() {
 form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) { 
     event.preventDefault();
-    if (email.value === '' || message.value === '') {
+    if (email.value.trim() === '' || message.value.trim() === '') {
         return alert('Fill please all fields');
     }
     console.log(formData);
